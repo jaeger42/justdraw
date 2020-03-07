@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill(0,255,255);
+  fill(255,255,255);
   rect(windowWidth-150,170,800,450);
   rect(0,(windowHeight-150),800,200);
   noStroke();
