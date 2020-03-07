@@ -7,9 +7,9 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill(255,255,255);
+  fill(0,255,255);
   rect(windowWidth-150,170,800,450);
-  rect(0,650,800,200);
+  rect(0,(windowHeight-150),800,200);
   noStroke();
   textSize(20);
   fill(50,50,50);
@@ -17,24 +17,24 @@ function draw() {
   text("medium",windowWidth-125,440);
   text("large",windowWidth-125,525);
   text("huge",windowWidth-125,605);
-  text("eraser",370,750)
-  text("red",118,750)
-  text("blue",38,750)
-  text("green",200,750)
-  text("yellow",280,750)
+  text("eraser",370,windowHeight-50)
+  text("red",118,windowHeight-50)
+  text("blue",38,windowHeight-50)
+  text("green",200,windowHeight-50)
+  text("yellow",280,windowHeight-50)
   text("pencil",windowWidth-125,265)
-  text("reset",460,750)
+  text("reset",460,windowHeight-50)
   noStroke();
   fill(0,0,200);
-  circle(50,700,50);
+  circle(50,windowHeight-100,50);
   noStroke();
   fill(200,0,0);
-  circle(130,700,50);
+  circle(130,windowHeight-100,50);
   noStroke();
   fill(75,75,75);
-  circle(390,700,50);
+  circle(390,windowHeight-100,50);
   fill(0,200,0);
-  circle(220,700,50);
+  circle(220,windowHeight-100,50);
   fill(100,100,100);
   circle(windowWidth-100,300,50);
   fill(100,100,100);
@@ -44,22 +44,22 @@ function draw() {
   fill(100,100,100);
   circle(windowWidth-100,560,50);
   fill(235,235,0);
-  circle(305,700,50);
+  circle(305,windowHeight-100,50);
   fill(100,100,100);
   circle(windowWidth-100,220,50);
   fill(100,100,100);
-  circle(480,700,50);
+  circle(480,windowHeight-100,50);
    if(mouseIsPressed) {
-     if ((mouseX-50)*(mouseX-50)+(mouseY-700)*(mouseY-700)<25*25) {
+     if ((mouseX-50)*(mouseX-50)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=1
      }
-     if ((mouseX-130)*(mouseX-130)+(mouseY-700)*(mouseY-700)<25*25) {
+     if ((mouseX-130)*(mouseX-130)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=2
      }
-     if ((mouseX-220)*(mouseX-220)+(mouseY-700)*(mouseY-700)<25*25) {
+     if ((mouseX-220)*(mouseX-220)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=3
     }
-       if ((mouseX-305)*(mouseX-305)+(mouseY-700)*(mouseY-700)<25*25) {
+       if ((mouseX-305)*(mouseX-305)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=4
      }
      if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-300)*(mouseY-300)<25*25) {
@@ -74,15 +74,15 @@ function draw() {
        if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-560)*(mouseY-560)<25*25) {
        size=100
      }
-     if ((mouseX-390)*(mouseX-390)+(mouseY-700)*(mouseY-700)<25*25) {
+     if ((mouseX-390)*(mouseX-390)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=5
      }
      if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-200)*(mouseY-200)<25*25) {
        size=2
      }
-          if ((mouseX-480)*(mouseX-480)+(mouseY-700)*(mouseY-700)<25*25) {
+          if ((mouseX-480)*(mouseX-480)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
             fill(255,255,255);
-            rect(0,0,800,800);
+            rect(0,0,windowWidth,windowHeight);
      }
              
      if (mode===1){
