@@ -62,22 +62,22 @@ function draw() {
        if ((mouseX-305)*(mouseX-305)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=4
      }
-     if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-300)*(mouseY-300)<25*25) {
+     if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-(windowHeight-470))*(mouseY-(windowHeight-470))<25*25) {
        size=10
      }
-     if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-390)*(mouseY-390)<25*25) {
+     if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-(windowHeight-380))*(mouseY-(windowHeight-380))<25*25) {
        size=25
      }
-          if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-480)*(mouseY-480)<25*25) {
+          if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-(windowHeight-290))*(mouseY-(windowHeight-290))<25*25) {
        size=50
      }
-       if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-560)*(mouseY-560)<25*25) {
+       if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-(windowHeight-200))*(mouseY-(windowHeight-200))<25*25) {
        size=100
      }
      if ((mouseX-390)*(mouseX-390)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
        mode=5
      }
-     if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-200)*(mouseY-200)<25*25) {
+     if ((mouseX-(windowWidth-100))*(mouseX-(windowWidth-100))+(mouseY-(windowHeight-560))*(mouseY-(windowHeight-560))<25*25) {
        size=2
      }
           if ((mouseX-480)*(mouseX-480)+(mouseY-(windowHeight-100))*(mouseY-(windowHeight-100))<25*25) {
