@@ -8,21 +8,21 @@ function setup() {
 function draw() {
   noStroke();
   fill(255,255,255);
-  rect(windowWidth-150,170,800,450);
-  rect(0,(windowHeight-150),800,200);
+  rect(windowWidth-150,windowHeight-605,800,470);
+  rect(0,(windowHeight-150),550,200);
   noStroke();
   textSize(20);
   fill(50,50,50);
-  text("small",windowWidth-125,350);
-  text("medium",windowWidth-125,440);
-  text("large",windowWidth-125,525);
-  text("huge",windowWidth-125,605);
+  text("small",windowWidth-125,windowHeight-420);
+  text("medium",windowWidth-125,windowHeight-330);
+  text("large",windowWidth-125,windowHeight-240);
+  text("huge",windowWidth-125,windowHeight-150);
   text("eraser",370,windowHeight-50)
   text("red",118,windowHeight-50)
   text("blue",38,windowHeight-50)
   text("green",200,windowHeight-50)
   text("yellow",280,windowHeight-50)
-  text("pencil",windowWidth-125,265)
+  text("pencil",windowWidth-125,windowHeight-510)
   text("reset",460,windowHeight-50)
   noStroke();
   fill(0,0,200);
@@ -36,17 +36,17 @@ function draw() {
   fill(0,200,0);
   circle(220,windowHeight-100,50);
   fill(100,100,100);
-  circle(windowWidth-100,300,50);
+  circle(windowWidth-100,windowHeight-470,50);
   fill(100,100,100);
-  circle(windowWidth-100,390,50);
+  circle(windowWidth-100,windowHeight-380,50);
   fill(100,100,100);
-  circle(windowWidth-100,480,50);
+  circle(windowWidth-100,windowHeight-290,50);
   fill(100,100,100);
-  circle(windowWidth-100,560,50);
+  circle(windowWidth-100,windowHeight-200,50);
   fill(235,235,0);
   circle(305,windowHeight-100,50);
   fill(100,100,100);
-  circle(windowWidth-100,220,50);
+  circle(windowWidth-100,windowHeight-560,50);
   fill(100,100,100);
   circle(480,windowHeight-100,50);
    if(mouseIsPressed) {
@@ -134,4 +134,9 @@ function keyPressed() {
   if (keyCode === 83) {
     saveCanvas();
   }
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+   fill(255,255,255);
+            rect(0,0,windowWidth,windowHeight);
 }
